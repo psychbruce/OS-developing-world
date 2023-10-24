@@ -5,12 +5,12 @@ This is a collaborative project that will collect practical experiences and guid
 
 Please contact Dr. Hu Chuan-Peng for more details: hcp4715 AT hotmail DOT com. 
 
-## Contributors of this project
+## Contributors
 
 [to-be-added]
 
 
-## Progress of this project
+## Progress
 
 - [x] Called for contributors. [Finished]
 
@@ -19,3 +19,7 @@ Please contact Dr. Hu Chuan-Peng for more details: hcp4715 AT hotmail DOT com.
 - [ ] Draft for each topic. [On-going, expected to be done before mid Nov. 2023]
 
 - [ ] First draft of the whole paper [expected to be done before Christmas 2023]
+
+
+## Conference presentations
+- 2023-10-23 ｜ Big Team Science Conference 2023 (online) | # 24 Featured Panel. See program [here](https://bigteamscienceconference.github.io/program/).
