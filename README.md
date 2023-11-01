@@ -1,7 +1,7 @@
 # Open Science in Developing Countries: A Collection of Practical Guides
 
 ## About
-This is a collaborative project that will collect practical experiences and guides related to Open Science in Developing countries. The aim of this project is writing a paper for [AMPPS](https://www.psychologicalscience.org/publications/ampps).
+This is a collaborative project that will collect practical experiences and guides related to Open Science in Developing countries. The direct output of this project will be a collaborative paper for the journal [Advances in Methods and Practices in Psychological Science (AMPPS)](https://www.psychologicalscience.org/publications/ampps). Utimately, we hope this project will accelerate international collaborations, especially those between researchers from developing countries. Also, we hope the practical guides will help researchers in developing countries to promote and implemente open scinece practices in psychological science and related fields. 
 
 This project is patnered with [the Chinese Open Science Network](https://open-sci.cn/) and [FORRT](https://forrt.org/)
 
@@ -17,11 +17,11 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 ## Progress
 
-- [x] Called for contributors. [Finished]
+- [x] Open call for contributors. [Finished]
 
 - [x] Identified topic leads. [Finished]
 
-- [ ] Draft for each topic. [On-going, expected to be done before mid Nov. 2023]
+- [ ] Drafts for each topic. [On-going, expected to be done before mid Nov. 2023]
 
 - [ ] First draft of the whole paper [expected to be done before Christmas 2023]
 
