@@ -17,13 +17,15 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 ## Progress
 
-- [x] Open call for contributors. [Finished]
+- [x] Open call for contributors.
 
-- [x] Identified topic leads. [Finished]
+- [x] Identified topic leads.
 
-- [ ] Drafts for each topic. [On-going, expected to be done before mid Nov. 2023]
+- [x] Drafts for each topic.
 
-- [ ] First draft of the whole paper [expected to be done before Christmas 2023]
+- [x] First draft of the whole paper.
+
+- [ ] Re-structure the first draft of the whole paper. [On-going]
 
 ## Conference presentations
 - 2023-10-23 ｜ Big Team Science Conference 2023 (online) | # 24 Featured Panel. See program [here](https://bigteamscienceconference.github.io/program/).
