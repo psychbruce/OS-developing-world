@@ -25,7 +25,13 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 - [x] First draft of the whole paper.
 
-- [ ] Re-structure the first draft of the whole paper. [On-going]
+- [x] Re-structure the first draft of the whole paper.
+
+- [ ] Final draft of the whole paper & polishing the figures.
+
+- [ ] Internal Review.
+
+- [ ] Preprint & Submission.
 
 ## Conference presentations
 - 2023-10-23 ｜ Big Team Science Conference 2023 (online) | # 24 Featured Panel. See program [here](https://bigteamscienceconference.github.io/program/).
