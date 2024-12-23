@@ -34,11 +34,24 @@ rm(list=ls())
 
 # load data 
 # setwd()
+df1 <- read.csv('Contributors.csv') %>%
+      # get unique values from "CountryOrRegion" and "Current.CountryOrRegion"
+      dplyr::select(CountryOrRegion, Current.CountryORRegion) %>%
+      # compare two columns and get the unique values
+      dplyr::mutate(Same = ifelse(CountryOrRegion == Current.CountryORRegion, "Yes", "No")) %>%
+      dplyr::filter(Same == "No") %>%
+      dplyr::select(Current.CountryORRegion) %>%
+      dplyr::rename(region = Current.CountryORRegion) %>%
+      dplyr::mutate(value = "current") # means the author has two countries
+
 df <- read.csv('Contributors.csv') %>%
-  dplyr::count(CountryOrRegion) %>%
-  dplyr::rename(region = CountryOrRegion,
-                value = n) %>%
-  dplyr::add_row(region = "Taiwan", value = 6)
+      # get unique values from "CountryOrRegion" and "Current.CountryOrRegion"
+      dplyr::select(CountryOrRegion) %>%
+      dplyr::rename(region = CountryOrRegion) %>%
+      dplyr::mutate(value = "current or original")  %>% # means the author has one country
+      rbind(df1) %>%
+      dplyr::count(region, value) %>%
+      dplyr::add_row(region = "Taiwan", value = "current or original", n = 4) 
 ```
 
 show on map, will improve in the future
@@ -50,20 +63,21 @@ WorldData <- map_data('world') %>%
 
 #Plot author country data
 plot1 <- ggplot() +
-    geom_map(data = WorldData, map = WorldData,
-                  aes(x = long, y = lat, group = group, map_id=region),
-                  fill = "white", colour = "#C6DBEF", linewidth=0.2) + 
-    geom_map(data = df, map=WorldData,
-                  aes(fill=value, map_id=region),
-                  colour="#C6DBEF", linewidth=0.2) +
-    coord_map("rectangular", lat0=0, xlim=c(-180,180), ylim=c(-60, 90)) + 
-    colorspace::scale_fill_continuous_sequential(palette = "Blues", 
-                                               begin = .18, end = .99) +
-    scale_y_continuous(breaks=c()) +
-    scale_x_continuous(breaks=c()) +
-    labs(fill="legend", title="Global South Affiliation", x="", y="") +
+      geom_map(data = WorldData, map = WorldData,
+               aes(x = long, y = lat, group = group, map_id=region),
+               fill = "gray", colour = "#C6DBEF", linewidth=0.2) + 
+      geom_map(data = df, map=WorldData,
+               aes(fill=value, map_id=region),
+               colour="#C6DBEF", linewidth=0.2) +
+    #  coord_map("conic", lat0 = 20,xlim=c(-180,180), ylim=c(-60, 90)) +
+      coord_map("rectangular", lat0=10, xlim=c(-180,180), ylim=c(-60, 90)) + 
+    # colorspace::scale_fill_continuous_sequential(palette = "Blues", 
+    #                                            begin = .18, end = .99) +
+      scale_y_continuous(breaks=c()) +
+      scale_x_continuous(breaks=c()) +
+      labs(fill="legend", title="Geo-distribution of contributors", x="", y="") +
   # theme_classic() +
-theme(legend.position = "bottom", 
+      theme(legend.position = "right", 
         legend.key.size = unit(0.7, 'cm'),
         strip.background = element_blank(), panel.spacing = unit(4, "mm"), panel.background = element_blank())
    
