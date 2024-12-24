@@ -51,7 +51,17 @@ df <- read.csv('Contributors.csv') %>%
       dplyr::mutate(value = "current or original")  %>% # means the author has one country
       rbind(df1) %>%
       dplyr::count(region, value) %>%
-      dplyr::add_row(region = "Taiwan", value = "current or original", n = 4) 
+      dplyr::add_row(region = "Taiwan", value = "current or original", n = 4) %>%
+      dplyr::filter(region != "Pacific Islands")
+
+# add rows for pacific island countries, 
+# c("Fiji", "Samoa", "Tonga", "Kiribati", "Vanuatu", "Cook Islands", "Marshall Islands", "Solomon Islands", "Palau", "Nauru", "Tuvalu", "Federated States of Micronesia", "Niue")
+df_pacific_island <- data.frame(region = c("Fiji", "Samoa", "Tonga", "Kiribati", "Vanuatu", "Cook Islands", "Marshall Islands", 
+                                           "Solomon Islands", "Palau", "Nauru", "Tuvalu", "Federated States of Micronesia", "Niue"),
+                                value = rep("current or original",13),
+                                n = rep(1,13))
+
+df <- rbind(df, df_pacific_island)      
 ```
 
 show on map, will improve in the future
