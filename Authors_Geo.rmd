@@ -65,22 +65,28 @@ WorldData <- map_data('world') %>%
 plot1 <- ggplot() +
       geom_map(data = WorldData, map = WorldData,
                aes(x = long, y = lat, group = group, map_id=region),
-               fill = "gray", colour = "#C6DBEF", linewidth=0.2) + 
+               fill = "#F2F2F2", colour = "#C6DBEF", linewidth=0.1) + 
       geom_map(data = df, map=WorldData,
                aes(fill=value, map_id=region),
                colour="#C6DBEF", linewidth=0.2) +
     #  coord_map("conic", lat0 = 20,xlim=c(-180,180), ylim=c(-60, 90)) +
-      coord_map("rectangular", lat0=10, xlim=c(-180,180), ylim=c(-60, 90)) + 
+      coord_map("rectangular", lat0=20, xlim=c(-180,180), ylim=c(-60, 90)) + 
+      scale_fill_manual(values = c("current" = "#BFEFFF", "current or original" = "blue")) +
     # colorspace::scale_fill_continuous_sequential(palette = "Blues", 
     #                                            begin = .18, end = .99) +
       scale_y_continuous(breaks=c()) +
       scale_x_continuous(breaks=c()) +
-      labs(fill="legend", title="Geo-distribution of contributors", x="", y="") +
-  # theme_classic() +
-      theme(legend.position = "right", 
-        legend.key.size = unit(0.7, 'cm'),
-        strip.background = element_blank(), panel.spacing = unit(4, "mm"), panel.background = element_blank())
+      labs(fill="", title="Geo-distribution of contributors", x="", y="") +
+      # put legend in the button and in one row, without legend title
+      theme(legend.position = "bottom", legend.direction = "horizontal", 
+            legend.title = element_blank(), legend.key.size = unit(0.5, 'cm'),
+            plot.title = element_text(hjust = 0.5),
+            panel.background = element_blank(), panel.grid = element_blank(),
+            axis.text = element_blank(), axis.title = element_blank())
    
 plot1 
+
+# save plot as a png file
+ggsave("Authors_Geo.png", plot1, width = 10, height = 5, units = "in")
 
 ```
