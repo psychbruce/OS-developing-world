@@ -19,8 +19,6 @@ if (!require("pacman")) install.packages("pacman")             # install the pac
 # load packages with "p_load"
 pacman::p_load("readxl", "plyr", "ggplot2", "knitr", "maps", "mapproj", "ggpubr")
 
-pacman::p_load("gtsummary")
-
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -86,13 +84,14 @@ plot1 <- ggplot() +
     #                                            begin = .18, end = .99) +
       scale_y_continuous(breaks=c()) +
       scale_x_continuous(breaks=c()) +
-      labs(fill="", title="Geo-distribution of contributors", x="", y="") +
+      # labs(fill="", title="Geo-distribution of contributors", x="", y="") +
       # put legend in the button and in one row, without legend title
       theme(legend.position = "bottom", legend.direction = "horizontal", 
             legend.title = element_blank(), legend.key.size = unit(0.5, 'cm'),
             plot.title = element_text(hjust = 0.5),
             panel.background = element_blank(), panel.grid = element_blank(),
-            axis.text = element_blank(), axis.title = element_blank())
+            axis.text = element_blank(), axis.title = element_blank(),
+            plot.margin = unit(c(1, 1, 1, 1), "lines"))
    
 plot1 
 

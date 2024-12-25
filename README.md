@@ -2,9 +2,9 @@
 
 ## About
 
-This is a collaborative project that will collect practical experiences and guides related to Open Science in Developing countries. The direct output of this project will be a collaborative paper for the journal [Advances in Methods and Practices in Psychological Science (AMPPS)](https://www.psychologicalscience.org/publications/ampps). Utimately, we hope this project will accelerate international collaborations, especially those between researchers from developing countries. Also, we hope the practical guides will help researchers in developing countries to promote and implemente open scinece practices in psychological science and related fields.
+This is a collaborative project that will collect practical experiences and guides related to Open Science in Developing countries. The direct output of this project will be a collaborative paper for the journal [Advances in Methods and Practices in Psychological Science (AMPPS)](https://www.psychologicalscience.org/publications/ampps). Ultimately, we hope this project will accelerate international collaborations, especially those between researchers from developing countries. Also, we hope the practical guides will help researchers in developing countries to promote and implement open science practices in psychological science and related fields.
 
-This project is patnered with [the Chinese Open Science Network](https://open-sci.cn/) and [FORRT](https://forrt.org/)
+This project is partnered with [the Chinese Open Science Network](https://open-sci.cn/) and [FORRT](https://forrt.org/)
 
 ### Contact
 
@@ -12,7 +12,7 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 ## Contributors
 
--   49 contributors will cover Open Science related topic from perspective of 12 developing countries.
+-   46 researchers contributed their perspective of open science from 20 developing countries/regions and synthesized this practical guide.
 
 <!-- insert the png figure here: -->
 
@@ -40,4 +40,4 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 -   2023-10-23 ｜ Big Team Science Conference 2023 (online) \| \# 24 Featured Panel. See program [here](https://bigteamscienceconference.github.io/program/).
 
-<!-- docker run -e PASSWORD=hulab2022 --cpus=4 --rm -p 8787:8787 -v $PWD:/home/rstudio/work hcp4715/rdock:nhb2024 -->
+<!-- env: run directly on Macbook Pro-->
