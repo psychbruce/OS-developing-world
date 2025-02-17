@@ -40,6 +40,12 @@ df1 <- read.csv('Contributors.csv') %>%
       dplyr::rename(region = Current.CountryORRegion) %>%
       dplyr::mutate(value = "current") # means the author has two countries
 
+NumCountries <- read.csv('Contributors.csv') %>%
+      # get unique values from "CountryOrRegion" and "Current.CountryOrRegion"
+      dplyr::select(CountryOrRegion) %>%
+      dplyr::rename(region = CountryOrRegion) %>%
+      dplyr::count(region)
+
 df <- read.csv('Contributors.csv') %>%
       # get unique values from "CountryOrRegion" and "Current.CountryOrRegion"
       dplyr::select(CountryOrRegion) %>%
