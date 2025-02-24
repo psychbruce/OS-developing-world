@@ -12,7 +12,7 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 ## Contributors
 
--   45 researchers contributed their perspective of open science from 20 developing countries/regions and synthesized this practical guide.
+-   44 researchers contributed their perspective of open science from 20 developing countries/regions and synthesized this practical guide.
 
 <!-- insert the png figure here: -->
 
@@ -32,12 +32,13 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 -   [x] Final draft of the whole paper & polishing the figures.
 
--   [ ] Internal Review.
+-   [x] Internal Review.
 
 -   [ ] Preprint & Submission.
 
 ## Conference presentations
 
--   2023-10-23 ｜ Big Team Science Conference 2023 (online) \| \# 24 Featured Panel. See program [here](https://bigteamscienceconference.github.io/program/).
+-   2024-06-10 \| SIPS 2024, Nairobi, Kenya, Hackathon: "Promoting Open Science in Developing Countries: A Practical Guide"
+-   2023-10-23 \| Big Team Science Conference 2023 (online) \| \# 24 Featured Panel. See program [here](https://bigteamscienceconference.github.io/program/).
 
 <!-- env: run directly on Macbook Pro-->
