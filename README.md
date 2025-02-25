@@ -12,7 +12,7 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 ## Contributors
 
--   44 researchers contributed their perspective of open science from 20 developing countries/regions and synthesized this practical guide.
+-   44 researchers contributed their perspective of open science from 21 developing countries/regions and synthesized this practical guide.
 
 <!-- insert the png figure here: -->
 
