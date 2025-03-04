@@ -32,9 +32,9 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 -   [x] Final draft of the whole paper & polishing the figures.
 
--   [x] Internal Review.
+-   [x] Internal Review. We thank the following researchers for their valuable comments and suggestions: Dr. [Chris Grahmam](https://www.researchgate.net/profile/Chris-Graham-17), Dr. [Crystal Stentopohl](https://cnsyoung.com/)
 
--   [ ] Preprint & Submission.
+-   [x] [Preprint](http://osf.io/7ubk2) & Submission (2025-03-03).
 
 ## Conference presentations
 
