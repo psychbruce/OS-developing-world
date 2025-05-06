@@ -38,7 +38,7 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 -   [ ] Under-revision (2025-05).
 
 ## Conference presentations
-
+-   2025-06-27 \| SIPS 2025, Budapest, Hungary, Unconference: "A Collection of Practical Guides for Adopting Open Science Practices in Resource-Limited Settings"
 -   2024-06-10 \| SIPS 2024, Nairobi, Kenya, Hackathon: "Promoting Open Science in Developing Countries: A Practical Guide"
 -   2023-10-23 \| Big Team Science Conference 2023 (online) \| \# 24 Featured Panel. See program [here](https://bigteamscienceconference.github.io/program/).
 
