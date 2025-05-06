@@ -63,7 +63,11 @@ df_pacific_island <- data.frame(region = c("Fiji", "Samoa", "Tonga", "Kiribati",
                                 value = rep("current or original",13),
                                 n = rep(1,13))
 
-df <- rbind(df, df_pacific_island)      
+df <- rbind(df, df_pacific_island) %>%
+      dplyr::mutate(value = factor(value, 
+                                   levels = c("current or original", "current"),
+                                   labels = c("Countries represented by authors",
+                                              "Countries of current institutes")))
 ```
 
 show on map, will improve in the future
@@ -83,11 +87,14 @@ plot1 <- ggplot() +
                colour="#C6DBEF", linewidth=0.2) +
     #  coord_map("conic", lat0 = 20,xlim=c(-180,180), ylim=c(-60, 90)) +
       coord_map("rectangular", lat0=20, xlim=c(-180,180), ylim=c(-60, 90)) + 
-      scale_fill_manual(values = c("current" = "#BFEFFF", "current or original" = "blue")) +
+      # fill map 
+    scale_fill_manual(values = c("blue", "#BFEFFF")) +
     # colorspace::scale_fill_continuous_sequential(palette = "Blues", 
     #                                            begin = .18, end = .99) +
       scale_y_continuous(breaks=c()) +
       scale_x_continuous(breaks=c()) +
+      # add note for legend
+      labs(caption="Note: 'Countries represented by authors' are limited to developing countries;\n          'Countries of current institutes' include only authors whose affiliations are in developed countries.") + 
       # labs(fill="", title="Geo-distribution of contributors", x="", y="") +
       # put legend in the button and in one row, without legend title
       theme(legend.position = "bottom", legend.direction = "horizontal", 
@@ -95,7 +102,8 @@ plot1 <- ggplot() +
             plot.title = element_text(hjust = 0.5),
             panel.background = element_blank(), panel.grid = element_blank(),
             axis.text = element_blank(), axis.title = element_blank(),
-            plot.margin = unit(c(1, 1, 1, 1), "lines"))
+            plot.margin = unit(c(1, 1, 1, 1), "lines")) +
+      theme(plot.caption = element_text(hjust = 0))
    
 plot1 
 
