@@ -66,8 +66,8 @@ df_pacific_island <- data.frame(region = c("Fiji", "Samoa", "Tonga", "Kiribati",
 df <- rbind(df, df_pacific_island) %>%
       dplyr::mutate(value = factor(value, 
                                    levels = c("current or original", "current"),
-                                   labels = c("Countries represented by authors",
-                                              "Countries of current institutes")))
+                                   labels = c("Authors' countries of origin (developing countries)",
+                                              "Current institutional countries (developed countries)")))
 ```
 
 show on map, will improve in the future
@@ -94,7 +94,7 @@ plot1 <- ggplot() +
       scale_y_continuous(breaks=c()) +
       scale_x_continuous(breaks=c()) +
       # add note for legend
-      labs(caption="Note: 'Countries represented by authors' are limited to developing countries;\n          'Countries of current institutes' include only authors whose affiliations are in developed countries.") + 
+      labs(caption="Note: Some authors from developing countries are affiliated with institutions in developed countries. The map aims to highlight\n          both geographic representation and current collaboration networks.") + 
       # labs(fill="", title="Geo-distribution of contributors", x="", y="") +
       # put legend in the button and in one row, without legend title
       theme(legend.position = "bottom", legend.direction = "horizontal", 
