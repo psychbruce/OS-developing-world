@@ -32,10 +32,10 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 -   [x] Final draft of the whole paper & polishing the figures.
 
--   [x] Internal Review. We thank the following researchers for their valuable comments and suggestions: Dr. [Chris Grahmam](https://www.researchgate.net/profile/Chris-Graham-17), Dr. [Crystal Stentopohl](https://cnsyoung.com/)
+-   [x] Internal Review. We thank the following researchers for their valuable comments and suggestions: Dr. [Chris Graham](https://www.researchgate.net/profile/Chris-Graham-17), Dr. [Crystal Steltenpohl](https://cnsyoung.com/)
 
 -   [x] [Preprint](http://osf.io/7ubk2) & Submission (2025-03-03).
--   [ ] Under-revision (2025-05).
+-   [x] Revision (2025-05 to 2025-06). We thanks the following early career researchers for their suggestions on the readability of this work: Yi-Ling-Zhang, Jiawei Zhao, and Ziyang Zhao.
 
 ## Conference presentations
 -   2025-06-27 \| SIPS 2025, Budapest, Hungary, Unconference: "A Collection of Practical Guides for Adopting Open Science Practices in Resource-Limited Settings"
