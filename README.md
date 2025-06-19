@@ -18,6 +18,56 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 ![Contributors](Authors_Geo.png)
 
+## name list
+**Contributors:**
+
+- Hu Chuan-Peng  
+- Zhiqi Xu  
+- Aleksandra Lazić  
+- Piyali Bhattacharya  
+- Leonardo Seda  
+- Samiul Hossain  
+- Alma Jeftić  
+- Asil Ali Özdoğru  
+- Olavo B. Amaral  
+- Nadica Miljković  
+- Zlatomira G. Ilchovska  
+- Ljiljana B. Lazarevic  
+- Han-Wu-Shuang Bao  
+- Nikita Ghodke  
+- David Moreau  
+- Mahmoud Elsherif  
+- Chinchu C.  
+- Sakshi Ghai  
+- Clarissa F. D. Carneiro  
+- Danka Purić  
+- Yin Wang  
+- Mirela Zaneva  
+- Felipe Vilanova  
+- Iris Žeželj  
+- Obrad Vučkovac  
+- Saida Heshmati  
+- Pooja Kulkarni  
+- Nadia Saraí Corral-Frías  
+- Juan Diego García-Castro  
+- Shubham Pandey  
+- Jamal Amani Rad  
+- Thipparapu Rajesh  
+- Bita Vahdani  
+- Saad Almajed  
+- Amna Ben Amara  
+- Leher Singh  
+- Ali H. Al-Hoorie  
+- Marcelo Camargo Batistuzzo  
+- Daniel Fatori  
+- Frankie Fong  
+- Zahra Khorami  
+- Joseph Almazan  
+- Biljana Gjoneska  
+- Meng Liu  
+- Flavio Azevedo
+
+
 ## Progress
 
 -   [x] Open call for contributors.
