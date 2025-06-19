@@ -36,7 +36,7 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 -   [x] [Preprint](http://osf.io/7ubk2) & Submission (2025-03-03).
 
--   [x] Revision (2025-05 to 2025-06). We thank the following early career researchers for their suggestions on the readability of this work: Yi-Ling-Zhang, Jiawei Zhao, and Ziyang Zhao.
+-   [x] Revision (2025-05 to 2025-06). We thank the following early career researchers for their suggestions on the readability of this work: Yi-Ling Zhang, Jiawei Zhao, and Ziyang Zhao.
 
 ## Conference presentations
 -   2025-06-27 \| SIPS 2025, Budapest, Hungary, Unconference: "A Collection of Practical Guides for Adopting Open Science Practices in Resource-Limited Settings"
