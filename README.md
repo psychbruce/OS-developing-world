@@ -2,7 +2,7 @@
 
 ## About
 
-This is a collaborative project that will collect practical experiences and guides related to Open Science in Developing countries. The direct output of this project will be a collaborative paper for the journal [Advances in Methods and Practices in Psychological Science (AMPPS)](https://www.psychologicalscience.org/publications/ampps). Ultimately, we hope this project will accelerate international collaborations, especially those between researchers from developing countries. Also, we hope the practical guides will help researchers in developing countries to promote and implement open science practices in psychological science and related fields.
+This is a collaborative project that will collect practical experiences and guides related to open science in developing countries. The direct output of this project will be a collaborative paper for the journal [Advances in Methods and Practices in Psychological Science (AMPPS)](https://www.psychologicalscience.org/publications/ampps). Ultimately, we hope this project will accelerate international collaborations, especially those between researchers from developing countries. Also, we hope the practical guides will help researchers in developing countries to promote and implement open science practices in psychological science and related fields.
 
 This project is partnered with [the Chinese Open Science Network](https://open-sci.cn/) and [FORRT](https://forrt.org/)
 
@@ -12,7 +12,7 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 ## Contributors
 
--   45 researchers contributed their perspectives of open science from 21 developing countries/regions and synthesized this practical guide.
+-   45 researchers contributed their perspectives of open science from 20 developing countries/regions and synthesized this practical guide.
 
 <!-- insert the png figure here: -->
 
@@ -30,11 +30,12 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 -   [x] Restructure the first draft of the whole paper.
 
--   [x] Final draft of the whole paper & polishing the figures.
+-   [x] Final draft of the whole paper and polishing the figures.
 
 -   [x] Internal Review. We thank the following researchers for their valuable comments and suggestions: Dr. [Chris Graham](https://www.researchgate.net/profile/Chris-Graham-17), Dr. [Crystal Steltenpohl](https://cnsyoung.com/)
 
 -   [x] [Preprint](http://osf.io/7ubk2) & Submission (2025-03-03).
+
 -   [x] Revision (2025-05 to 2025-06). We thank the following early career researchers for their suggestions on the readability of this work: Yi-Ling-Zhang, Jiawei Zhao, and Ziyang Zhao.
 
 ## Conference presentations

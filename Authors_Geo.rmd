@@ -54,6 +54,7 @@ df <- read.csv('Contributors.csv') %>%
       rbind(df1) %>%
       dplyr::count(region, value) %>%
       dplyr::add_row(region = "Taiwan", value = "current or original", n = 4) %>%
+      # dplyr::add_row(region = "Kosovo", value = "current or original", n = 7) %>%
       dplyr::filter(region != "Pacific Islands")
 
 # add rows for pacific island countries, 
@@ -74,8 +75,20 @@ show on map, will improve in the future
 ```{r}
 #Load World map data 
 WorldData <- map_data('world') %>% 
-  dplyr::filter(region != "Antarctica") %>% 
-  fortify
+      dplyr::filter(region != "Antarctica") %>% 
+      fortify # %>%
+      # replace "kosovo" with "Kosovo" for consistency
+      # dplyr::mutate(region = ifelse(region == "Kosovo", "Serbia", region),
+      #               group = ifelse(group == 943, 1383,group))
+      
+# tmp <- WorldData %>%
+#       dplyr::filter(region %in% c("Serbia",'Kosovo'))
+# # Merge Kosovo and Serbia, remove inner border
+# serbia_and_kosovo_merged <- unionSpatialPolygons(ne_countries(scale=50, country=c("Kosovo","Republic of Serbia")), IDs = c(1, 1), threshold = 1.25)
+# plot(serbia_and_kosovo_merged)
+# 
+# # Replace Serbia by the generated merged shape
+# data[data$admin=="Republic of Serbia", "geometry"] <- st_as_sf(serbia_and_kosovo_merged)$geometry
 
 #Plot author country data
 plot1 <- ggplot() +
