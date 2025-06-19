@@ -18,9 +18,7 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 
 ![Contributors](Authors_Geo.png)
 
-## name list
-**Contributors:**
-
+## Contributors:
 - Hu Chuan-Peng  
 - Zhiqi Xu  
 - Aleksandra Lazić  
@@ -67,26 +65,27 @@ Dr. Hu Chuan-Peng, School of Psychology, Nanjing Normal University, Nanjing, Chi
 - Meng Liu  
 - Flavio Azevedo
 
-
 ## Progress
 
--   [x] Open call for contributors.
+-   [x] 2023-04-05, [open call for contributors](https://x.com/hcp4715/status/1643636121081991169).
 
--   [x] Identified topic leads.
+-   [x] 2023-07-26, identified topic leads (the 3rd meeting).
 
--   [x] Drafts for each topic.
+-   [x] 2024-04-05, drafts were ready for each topic.
 
--   [x] First draft of the whole paper.
+-   [x] 2024-04-12, first draft of the whole paper was ready.
 
--   [x] Restructure the first draft of the whole paper.
+-   [x] 2024-04-22, started to restructure the first draft of the whole paper.
 
--   [x] Final draft of the whole paper and polishing the figures.
+-   [x] 2024-10-15, final draft of the whole paper was ready and start polishing the figures.
 
--   [x] Internal Review. We thank the following researchers for their valuable comments and suggestions: Dr. [Chris Graham](https://www.researchgate.net/profile/Chris-Graham-17), Dr. [Crystal Steltenpohl](https://cnsyoung.com/)
+-   [x] 2025-01-23, internal review started. We thank the following researchers for their valuable comments and suggestions: Dr. [Chris Graham](https://www.researchgate.net/profile/Chris-Graham-17), Dr. [Crystal Steltenpohl](https://cnsyoung.com/)
 
--   [x] [Preprint](http://osf.io/7ubk2) & Submission (2025-03-03).
+-   [x] 2025-03-03, released the [preprint](http://osf.io/7ubk2) and submitted to AMPPS.
 
--   [x] Revision (2025-05 to 2025-06). We thank the following early career researchers for their suggestions on the readability of this work: Yi-Ling Zhang, Jiawei Zhao, and Ziyang Zhao.
+-   [x] 2025-04-15, start to revise.
+
+-   [x] 2025-06-17, finished revision. We thank the following early career researchers for their suggestions on the readability of this work: Yi-Ling Zhang, Jiawei Zhao, and Ziyang Zhao.
 
 ## Conference presentations
 -   2025-06-27 \| SIPS 2025, Budapest, Hungary, Unconference: "A Collection of Practical Guides for Adopting Open Science Practices in Resource-Limited Settings"
