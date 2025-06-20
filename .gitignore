@@ -22,3 +22,6 @@
 
 # RStudio Connect folder
 rsconnect/
+
+# redundant script from Nadica
+mapNew.R

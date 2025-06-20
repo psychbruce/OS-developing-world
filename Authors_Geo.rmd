@@ -17,7 +17,8 @@ This is an R Markdown document for creating a spatial distribution of our author
 if (!require("pacman")) install.packages("pacman")             # install the package manager pacman
 
 # load packages with "p_load"
-pacman::p_load("readxl", "plyr", "ggplot2", "knitr", "maps", "mapproj", "ggpubr")
+pacman::p_load("readxl", "plyr", "ggplot2", "knitr", "maps", "mapproj", "ggpubr",
+               "dplyr", "sf", "spData")
 
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -76,19 +77,38 @@ show on map, will improve in the future
 #Load World map data 
 WorldData <- map_data('world') %>% 
       dplyr::filter(region != "Antarctica") %>% 
-      fortify # %>%
-      # replace "kosovo" with "Kosovo" for consistency
+      # # replace "kosovo" with "Kosovo" for consistency
       # dplyr::mutate(region = ifelse(region == "Kosovo", "Serbia", region),
-      #               group = ifelse(group == 943, 1383,group))
+      #               group = ifelse(group == 943, 1383,group)) %>%
+      # dplyr::mutate(group = ifelse(group >= 943, group - 1, group)) %>%
+      fortify
       
-# tmp <- WorldData %>%
-#       dplyr::filter(region %in% c("Serbia",'Kosovo'))
-# # Merge Kosovo and Serbia, remove inner border
-# serbia_and_kosovo_merged <- unionSpatialPolygons(ne_countries(scale=50, country=c("Kosovo","Republic of Serbia")), IDs = c(1, 1), threshold = 1.25)
-# plot(serbia_and_kosovo_merged)
-# 
-# # Replace Serbia by the generated merged shape
-# data[data$admin=="Republic of Serbia", "geometry"] <- st_as_sf(serbia_and_kosovo_merged)$geometry
+
+# now add Serbia from another map
+data(world)
+indSr <- which(world$name_long == "Serbia")
+indKs <- which(world$name_long == "Kosovo")
+borderSRKS = st_union(world[indSr, 'geom' ],
+                      world[indKs, 'geom'] )
+world[indSr, ]$geom = borderSRKS$geom
+world = world[-indKs, ]
+
+# longitude and latitute for Serbia
+RepublicSerbia <- st_as_sf(world$geom[indSr])
+RSlatLong <- st_coordinates(RepublicSerbia)
+
+# create new data frame containing Serbia
+tmp <- list()
+tmp$long <- RSlatLong[,1]
+tmp$lat <- RSlatLong[,2]
+tmp$group <- rep(NA, length(RSlatLong[,2]))
+tmp$order <- rep(NA, length(RSlatLong[,2]))
+tmp$subregion <- rep(NA, length(RSlatLong[,2]))
+tmp$region <- rep("Serbia", length(RSlatLong[,2]))
+tmp <- as.data.frame(tmp)
+
+# merge two data frames
+WorldData <- dplyr::bind_rows(WorldData, tmp)
 
 #Plot author country data
 plot1 <- ggplot() +
